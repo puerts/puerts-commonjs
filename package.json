@@ -1,6 +1,6 @@
 {
-  "name": "puerts-commonjs",
-  "version": "1.0.0",
+  "name": "@puerts/commonjs",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
   },

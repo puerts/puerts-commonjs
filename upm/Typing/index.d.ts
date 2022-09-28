@@ -1,4 +1,4 @@
-namespace puer {
+declare namespace puer {
     function require(name: string): any;
 
     function genRequire(): (name: string) => any;
