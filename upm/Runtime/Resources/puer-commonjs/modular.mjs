@@ -111,6 +111,7 @@ puer.getModuleBySID = getModuleBySID;
 
 puer.registerBuildinModule = registerBuildinModule;
 
+global.nodeRequire = global.nodeRequire || global.require;
 global.require = genRequire("");
 
 function clearModuleCache () {
