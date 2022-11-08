@@ -35,24 +35,7 @@ function searchModuleInDirWithExt(dir, requiredModule) {
     }
 }
 
-// function getFileExtension(filepath) {
-//     let last = filepath.split('/').pop();
-//     let frags = last.split('.');
-//     if (frags.length > 1) {
-//         return frags.pop();
-//     }
-// }
-
 function searchModuleInDir(dir, requiredModule) {
-    // if (getFileExtension(requiredModule)) {
-    //     return searchModuleInDirWithExt(dir, requiredModule);
-    // } else {
-    //     return searchModuleInDirWithExt(dir, requiredModule + ".js")
-    //                 || searchModuleInDirWithExt(dir, requiredModule + ".cjs")
-    //                 || searchModuleInDirWithExt(dir, requiredModule + "/index.js")
-    //                 || searchModuleInDirWithExt(dir, requiredModule + "/package.json");
-    // }
-
     // Stanley: Dont know how to check a path is a dir or file in puer system, 
     //          so put requireModule at last check list to ensure its result correct.
     return searchModuleInDirWithExt(dir, requiredModule + ".js")
