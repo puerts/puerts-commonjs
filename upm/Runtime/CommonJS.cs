@@ -1,4 +1,4 @@
-namespace Puerts.ThirdParty 
+namespace Puerts.ThirdParty
 {
     public class CommonJS
     {

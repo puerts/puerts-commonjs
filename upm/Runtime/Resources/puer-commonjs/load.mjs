@@ -20,11 +20,11 @@ function pathNormalize(path) {
             }
         }
     }
-    return newPathFrags.join("/");
+    return (path.startsWith('/') ? '/' : '') + newPathFrags.join("/");
 }
 
 function searchModuleInDirWithExt(dir, requiredModule) {
-    var searchPath = pathNormalize(dir + '/' + requiredModule);
+    var searchPath = pathNormalize((dir ? dir + '/' : '') + requiredModule);
     if (puer.fileExists(searchPath)) {
         return searchPath;
     }
@@ -42,6 +42,7 @@ function getFileExtension(filepath) {
         return frags.pop();
     }
 }
+
 
 function searchModuleInDir(dir, requiredModule) {
     if (getFileExtension(requiredModule)) {
