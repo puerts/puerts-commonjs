@@ -26,6 +26,13 @@ openupm add com.tencent.puerts.commonjs
 
 3. install manually | 手动复制安装
 
+## 使用方式
+```
+  env = new JsEnv();
+  Puerts.ThirdParty.CommonJS.InjectSupportForCJS(env);
+  env.Eval("console.log(require('test.cjs'))");
+```
+
 ## Handle D.TS | 处理D.ts
 本仓库附带了dts，但你需要在您的`tsconfig.json`处手动加上该d.ts所在目录的位置
 ```
