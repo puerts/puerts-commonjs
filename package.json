@@ -1,9 +1,8 @@
 {
-  "name": "@puerts/commonjs",
-  "version": "1.0.1",
-  "description": "",
-  "scripts": {
-  },
-  "author": "zombieyang",
-  "license": "BSD-3 Clause"
+    "name": "@puerts/commonjs",
+    "version": "2.0.1",
+    "description": "",
+    "scripts": {},
+    "author": "zombieyang",
+    "license": "BSD-3 Clause"
 }
