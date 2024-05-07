@@ -1,7 +1,7 @@
 {
     "name": "com.tencent.puerts.commonjs",
     "displayName": "PuerTS commonjs support",
-    "version": "2.0.1",
+    "version": "2.0.5",
     "description": "add commonjs support for puerts 1.4.0-rc.0+",
     "scripts": {},
     "author": {
